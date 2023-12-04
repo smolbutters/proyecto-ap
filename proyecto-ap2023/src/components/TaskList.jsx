@@ -1,11 +1,19 @@
-import React from 'react'
+import React from 'react';
+import TaskItem from './TaskItem';
 
-const TaskList = () => {
+const TaskList = ({ tasks, onToggleComplete, onDelete }) => {
   return (
-    <div>
-      
+    <div className='task-list-container'>
+      {tasks.map((task) => (
+        <TaskItem
+          key={task.id}
+          task={task}
+          onToggleComplete={onToggleComplete}
+          onDelete={onDelete}
+        />
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default TaskList
+export default TaskList;

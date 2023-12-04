@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+*{
+  font-family: Tilt Warp;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(rgb(195, 226, 223), rgb(44, 83, 128) );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  margin: 30px;
+}
+
+
+main {
+  height: 1500px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#no-alquiler{
+    text-align: center;
+    font-size: medium;
+    font-style: italic;
+    
+}
+
+#alquiler-pendiente{
+  text-align: center;
+  font-size: large;
+  text-decoration: underline;
+}
+
+/* form */
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0px auto;
+  padding: 40px 50px;
+  gap: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px rgba(15, 21, 30, 0.3);
+}
+
+/* task item */
+
+.task-item-container {
+  flex: 0 0 200px;
+  margin: 10px;
+  text-align: left;
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 300px;
+  max-height: 20%;
+  align-content: center;
+  border: 2px solid #3b3f41;
+  border-radius: 10px;
+  background-color: #fff4e6;
+  box-shadow: 10px 5px 5px rgba(15, 21, 30, 0.3);
+}  
+
+.task-item {
+  display: flex;
+  margin: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.eliminar {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgb(243, 127, 127);
+}
+
+.eliminar:hover {
+  cursor:pointer;
+  background-color: red;
+}
+
+.eliminar:active {
+  background-color: darkred;
+}
+
+.completado {
+  border-radius: 10px;
+  background-color: rgb(225, 248, 191);
+}
+
+.completado:hover {
+  cursor: pointer;
+  background-color: rgb(174, 250, 59);
+}
+
+.completado:active {
+  background-color: green;
+}
+
+.task-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: normal;
+}
+
+input {              
+  border: 2px solid #8d8d8d;
+  border-radius: 4px;
+  background: #f9f9f9;
+  height: 30px;
+  min-width: 100%;
+  margin: auto;
+  padding: 0 16px;
+  outline: none; 
+}
+
+select {
+  border: 2px solid #8d8d8d;
+  border-radius: 4px;
+  background: #f9f9f9;
+  height: 30px;
+  min-width: 100%;
+  padding: 0 16px;
+  outline: none; 
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+.button-submit {
+  border: 2px solid #8d8d8d;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.button-submit:hover {
+  cursor: pointer;
+  background-color: #adb8b9;
+}
+
+.button-submit:active {
+  background-color: lightslategray;
+}
