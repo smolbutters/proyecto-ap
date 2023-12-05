@@ -17,8 +17,19 @@ const Home = () => {
   const handleToggleComplete = (taskId) => {
     setTasks((prevTasks) =>
       prevTasks.map((task) =>
-        task.id === taskId ? { ...task, completed: !task.completed } : task
-      )
+        {if (task.id === taskId) {
+          return {
+            id: task.id, 
+            name: task.name, 
+            numTel: task.numTel, 
+            email: task.email, 
+            autoSel: task.autoSel,
+            completed: !task.completed,
+          };
+        } else {
+          return task;
+        }
+      })
     );
   };
 
