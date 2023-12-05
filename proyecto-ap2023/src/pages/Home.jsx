@@ -30,8 +30,6 @@ const Home = () => {
     setTasks((prevTasks) => [...prevTasks, newTask]);
   };
 
-  const alquileresPendientes = tasks.filter((task) => !task.completed).length;
-
   return (
     <div>
       <div>
